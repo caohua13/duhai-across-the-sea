@@ -7,6 +7,7 @@
 - **在线观看**：<https://caohua13.github.io/duhai-across-the-sea/>
 - **完整版正片**：网页内直接播放 3′00″（`assets/video/duhai_full_720.mp4`）
 - **说明文档**：`作品说明_创新转化.pdf` / `.docx`
+- **AI 创作说明**：`AI创作说明.pdf` / `.docx` / `.md`（逐项交代哪些环节用了 AI、用了什么工具、哪里必须人来把关）
 
 ## 页面内容（11 个板块）
 

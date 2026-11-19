@@ -1,0 +1,113 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>《渡海 / Across the Sea》AI 创作说明</title>
+<style>
+@page{size:A4;margin:2cm 1.9cm}
+body{font-family:"Microsoft YaHei","微软雅黑",sans-serif;font-size:10.5pt;line-height:1.75;color:#1c1c1c}
+h1{font-size:19pt;color:#123;border-bottom:2px solid #c9a45c;padding-bottom:6px}
+h2{font-size:13.5pt;color:#134;margin-top:18px;border-left:4px solid #c9a45c;padding-left:8px}
+h3{font-size:11.5pt;margin-top:12px}
+blockquote{margin:8px 0;padding:6px 10px;background:#f6f4ee;border-left:3px solid #d8c9a4;color:#444;font-size:9.8pt}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:9.5pt}
+th{background:#eef2f2;text-align:left;padding:5px 7px;border:1px solid #ccd}
+td{padding:5px 7px;border:1px solid #ccd;vertical-align:top}
+code{background:#f2f2f2;padding:1px 4px;font-family:Consolas,monospace;font-size:9.5pt}
+hr{border:0;border-top:1px solid #ddd;margin:14px 0}
+</style></head><body>
+<h1>《渡海 / Across the Sea》AI 创作说明</h1>
+<blockquote>参赛：山东大学翻译学院「蓝色创想&#183;以语为桥」跨文化传播创新实践大赛 &#183; B 赛道（数字传播）<br>作品：3 分钟动画短片《渡海》（MP4）＋ 交互网页（index.html / 在线版）<br>编写时间：2026 年 11 月 19 日<br>本说明逐项交代：<strong>哪些环节用了 AI、用了什么工具、做到什么程度、哪里必须由人把关</strong>。凡 AI 不能代替的判断，一律写明由人工完成。</blockquote>
+<hr>
+<h2>一、一句话概述</h2>
+<p>本作品的<strong>画面</strong>主要由 AI 生成视频模型产出，<strong>文字、脚本、译写、网页代码</strong>在 AI 辅助下由团队撰写与修改，<strong>事实核查、译文校订、成片定稿与无障碍校验</strong>全部由人工完成并负责。</p>
+<p>三个层次的责任划分是：</p>
+<table>
+<tr><th>层次</th><th>谁做</th><th>人工的作用</th></tr>
+<tr><td>创意与选题</td><td>团队</td><td>决定讲什么、为什么讲、献给谁</td></tr>
+<tr><td>生成与实现（画面、文字初稿、代码、翻译初稿）</td><td>AI 工具</td><td>按提示词产出素材与初稿</td></tr>
+<tr><td>核对与定稿（史实、译文、字幕、无障碍、剪辑）</td><td>团队</td><td>逐句核对、逐场审定、对结果负全部责任</td></tr>
+</table>
+<hr>
+<h2>二、源视频（成片《渡海》）用了什么 AI</h2>
+<p><strong>成片是 AI 生成画面（AI 视频/图像生成模型）＋ 人工剪辑与字幕合成的结果</strong>，不是实拍，也不是纯手工逐帧绘制。</p>
+<table>
+<tr><th>环节</th><th>做法</th><th>说明</th></tr>
+<tr><td>分镜与画面生成</td><td><strong>AI 生成视频模型</strong>（文生视频 / 图生视频，逐场生成 10 个场次）</td><td>八仙过海的蓬莱海岸、海上丝绸之路古港、展厅里四位青年分享各自的海，均按分镜逐场由 AI 生成；人物造型以文字提示词约束为动画电影质感</td></tr>
+<tr><td>画面一致性</td><td>AI 生成 ＋ 人工筛选</td><td>同一人物在不同镜头间的连贯性由人工挑选可用镜头保证；AI 生成中常见的变形、多余手指、口型不对的片段被剔除或重做</td></tr>
+<tr><td>音乐与音效</td><td>音频生成 / 素材编辑</td><td>海浪、风声、环境声与配乐为生成或素材剪辑；十句人声为片中人物台词</td></tr>
+<tr><td>成片剪辑</td><td>人工剪辑软件完成</td><td>场次拼接、节奏、时长裁剪、片头片尾、字幕合成均为人工操作；成片 1920&#215;1078、30fps、3′00″、-18.2 dB 平均电平</td></tr>
+<tr><td>中文字幕</td><td>人工撰写，AI 辅助整理时间轴</td><td>字幕文本由剧本与人工听写确定；时间轴以音频语音段检测（VAD）配合人工复核完成</td></tr>
+</table>
+<blockquote><strong>关于&quot;源视频到底是哪个模型&quot;</strong>：见第七节&quot;提交前请团队确认的两处&quot;。本说明正文按&quot;AI 视频生成模型&quot;表述，团队据实填统即可。</blockquote>
+<p><strong>成片里 AI 生成的痕迹与我们的处理</strong>（不隐瞒，这也是本作品&quot;AI 边界&quot;讨论的一部分）：</p>
+<ul>
+<li>人物手指、器物细节在个别镜头有 AI 生成感；</li>
+<li>2′31″ 法语台词配了俄语原文、2′38″ 俄语台词配了法语原文——这是<strong>把 AI 生成初稿直接当成品用</strong>造成的错误，我们把它作为案例写进了网页「无障碍」与「多声部」板块，页面上展示&quot;目标版字幕&quot;的正确做法，并在提交材料里写明差异；</li>
+<li>全片约有 2.2 秒黑帧、画面比例 1920&#215;1078（非标准 16:9），均未修饰，按原样提交。</li>
+</ul>
+<hr>
+<h2>三、长篇文字与脚本用了什么 AI</h2>
+<table>
+<tr><th>环节</th><th>AI 的作用</th><th>人的作用</th></tr>
+<tr><td>剧本结构与台词</td><td>AI 辅助生成初稿与润色</td><td>选题、&quot;海那边，会有什么？&quot;这一问的提法、十场的情绪走向，由团队确定；台词由人工逐句改定</td></tr>
+<tr><td>四语台词（中&#183;英&#183;法&#183;俄）</td><td>AI 生成译写初稿</td><td>英语、法语、俄语译文<strong>请专业同学逐句校订</strong>，重点核查&quot;说话人—画面—字幕&quot;三者是否一致；法语与俄语还做了朗读校验</td></tr>
+<tr><td>作品说明与网页文案</td><td>AI 辅助起草</td><td>观点、结构、五个转化层次的判断由团队提出并定稿</td></tr>
+<tr><td>事实陈述</td><td>—</td><td>八仙传说版本、海上丝绸之路与古港史实，由人工核对公开资料（UNESCO &quot;About the Silk Roads&quot; 等），只写可核查来源；八仙造型与法宝分配标注为&quot;艺术设定&quot;，不作为民间传说的标准定本</td></tr>
+</table>
+<hr>
+<h2>四、交互网页用了什么 AI</h2>
+<table>
+<tr><th>环节</th><th>AI 的作用</th><th>人的作用</th></tr>
+<tr><td>网页结构与交互</td><td>AI 辅助编写代码（HTML / CSS / JavaScript）</td><td>信息架构、11 个板块的取舍、无障碍规范与&quot;五个转化层次&quot;的对应关系由团队确定；每个交互逐项验收</td></tr>
+<tr><td>字幕规范与无障碍内容</td><td>AI 辅助整理</td><td>依《无障碍环境建设法》与字幕通行规范的要点整理，盲文点阵示意、高对比模式由人工校验可用性</td></tr>
+<tr><td>网页里的图片</td><td>部分 AI 生成 ＋ 从成片截帧</td><td>剧照、片头、场景卡、波形图<strong>均由脚本从成片自动切出</strong>（ffmpeg 抽取原声、波形、3 秒场景循环），不是另画的示意；作品中标注&quot;本片创意&quot;的港口故事卡、八仙&quot;今天&quot;层，均为创作性内容并已在页面注明</td></tr>
+<tr><td>文案与译写工作台例句</td><td>AI 辅助起草</td><td>人工校对，避免把&quot;机翻&quot;当&quot;人译&quot;展示</td></tr>
+</table>
+<p><strong>网页的诚实性设计</strong>：页面不声称修复了成片的问题，只展示&quot;目标版做法&quot;；观众回答只存在浏览器本地（localStorage），不上传、不需账号，不构成线上调研数据。</p>
+<hr>
+<h2>五、图片、声音、字幕的逐项归属</h2>
+<table>
+<tr><th>素材</th><th>来源</th><th>是否 AI 生成</th></tr>
+<tr><td>成片画面（10 个场次）</td><td>AI 视频生成 → 人工剪辑</td><td><strong>是</strong></td></tr>
+<tr><td>网页剧照、片头、场景卡、波形图</td><td>从成片脚本切出</td><td>派生自 AI 画面</td></tr>
+<tr><td>十句原声（voices/）</td><td>从成片切出</td><td>派生自成片人声</td></tr>
+<tr><td>中英双语字幕（27 条，导出 23 条）</td><td>剧本 ＋ 人工听写 ＋ AI 辅助时间轴</td><td>文本以人为主</td></tr>
+<tr><td>法语、俄语台词</td><td>AI 初稿 → 人工校订</td><td>初稿 AI，定稿人工</td></tr>
+<tr><td>网页代码、说明文档</td><td>AI 辅助 → 人工定稿</td><td>辅助</td></tr>
+</table>
+<hr>
+<h2>六、用了哪些 AI 工具</h2>
+<blockquote>表格按&quot;环节 → 工具&quot;登记。<strong>未能留档的工具一律不写具体名称</strong>，以免夸大或写错；请团队按自己的实际使用情况补齐（见第七节）。</blockquote>
+<table>
+<tr><th>环节</th><th>工具</th><th>用途与边界</th></tr>
+<tr><td>画面生成（源视频）</td><td>AI 视频生成模型（文生视频 / 图生视频）</td><td>逐场生成 10 个场次的画面；输出后由人工筛选、剔除瑕疵镜头</td></tr>
+<tr><td>音乐与音效</td><td>AI 音频生成 / 素材库</td><td>环境声与配乐；人声为片中台词</td></tr>
+<tr><td>剧本、文案与译写</td><td>AI 对话大模型</td><td>结构与初稿、润色；译文初稿</td></tr>
+<tr><td>网页开发</td><td>AI 编程助手</td><td>HTML / CSS / JS 与数据处理脚本的初稿与修改</td></tr>
+<tr><td>工程与后期</td><td>FFmpeg（开源工具，非 AI）</td><td>抽帧、切原声、生成波形、场景循环、编码转码、加字幕轨</td></tr>
+<tr><td>剪辑</td><td>人工剪辑软件</td><td>拼接、节奏、字幕合成</td></tr>
+</table>
+<blockquote>说明：FFmpeg 是开源音视频工具，本身不含生成式 AI，列出它是为了说明&quot;网页里的原声、波形、场景卡都是脚本从成片里真实切出来的&quot;，而非另行生成。</blockquote>
+<hr>
+<h2>七、提交前请团队确认的两处</h2>
+<blockquote>以下两项<strong>只能在团队自己的记录里找到确切答案</strong>，本说明不作猜测。确认后填上，其他内容不必改。</blockquote>
+<ol>
+<li><strong>源视频用哪个 AI 视频生成模型</strong>（如：即梦 / 可灵 / 海螺 / Vidu / Runway 等）</li>
+</ol>
+<p>→ 填：<code>______________</code>（团队实际使用的工具与版本）</p>
+<ol>
+<li><strong>文字与网页开发用的是哪个 AI</strong>（如：DeepSeek / 豆包 / ChatGPT / Claude / 通义等）</li>
+</ol>
+<p>→ 填：<code>______________</code></p>
+<hr>
+<h2>八、AI 在这个作品里做不到什么</h2>
+<p>这部分是我们主动写出来的，也是作品想回答的问题：</p>
+<ol>
+<li><strong>AI 写不出&quot;为什么是这一句&quot;</strong>——&quot;海那边，会有什么？&quot;这句问话、以及&quot;去相见，才会知道&quot;这个回答，是团队对&quot;以语为桥&quot;这一主题的判断，不是模型生成的选项。</li>
+<li><strong>AI 保证不了史实的准确性</strong>——八仙传说版本、海上丝绸之路的表述，必须人查资料、人来负责。</li>
+<li><strong>AI 判断不了译文得好不好</strong>——法语、俄语的语域差别，最后由懂这两门语言的人定。</li>
+<li><strong>AI 也修不好成片里的硬伤</strong>——字幕配错语言，只能由人发现、人来承担，并把它变成可以教给别人的案例。</li>
+<li><strong>网页的价值不在&quot;AI 写了很多&quot;</strong>——而在把一支只能被看一次的片子，变成可以读、可以听、可以续写、可以带进课堂的东西。</li>
+</ol>
+<hr>
+<h2>九、一句话答复&quot;这是不是 AI 一键生成的&quot;</h2>
+<p>不是。<strong>画面是 AI 生成的，作品是人工做成的</strong>：分镜、提问、译文校订、字幕纠错、无障碍设计与网页信息架构都有人逐一负责；AI 生成中出错的地方，我们保留在台面上，并写进了作品本身。</p>
+
+</body></html>
